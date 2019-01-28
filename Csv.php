@@ -115,8 +115,7 @@ class Csv {
 	 * @return string/null
 	 */
 	public function write($method = self::STRING,$filename = false) {
-		$handle = fopen('php://output','w');
-		$countries = Lionite_Helper_Countries::$countries;
+		$handle = fopen('php://output','w');		
 		$map = $this -> _fieldMap;
 		$titles = array_flip($map);
 		
